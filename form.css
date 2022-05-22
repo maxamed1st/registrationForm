@@ -1,0 +1,60 @@
+:root {
+    font-size: 2px;
+    font-family: snell roundhand, cursive;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+fieldset {
+    /*trying fieldset instead of wrapper. 
+    If this works well enough => delete wrapper class
+    Another thing to try is 
+    */
+    width: 207rem;
+    margin: auto;
+    font-size: 16rem;
+    border:0;
+    background-color: rgb(255, 127, 80);
+}
+fieldset > legend {
+    font-weight: 900;
+    color: rgb(168, 63, 168);
+}
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+form > fieldset > div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+label {
+    width: 90rem;
+}
+input:not(input[type="radio"]) {
+    width: 225rem;
+    height: 25rem;
+    box-shadow: 7px 7px black;
+}
+form > fieldset > div > div{
+    margin: auto;
+    color:antiquewhite;
+}
+button {
+    margin-left: 90rem;
+    width: 225rem;
+    height: 25rem;
+    background-color: darkviolet;
+    letter-spacing: 3rem;
+    font-size: 17rem;
+}
+button:hover {
+    background-color:cadetblue;
+}
+button:active {
+    background-color: crimson;
+}
