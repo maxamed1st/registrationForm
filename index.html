@@ -15,22 +15,22 @@
                 <legend>Account details</legend>
                 <div>
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="maxamed1st">
+                    <input type="text" id="username" name="username" placeholder="maxamed1st" required>
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Passw0r6">
+                    <input type="password" id="password" name="password" placeholder="passwrd6" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
                 </div>
                 <div>
                     <label for="Email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="maxamed1st@icloud.com">
+                    <input type="email" id="email" name="email" placeholder="maxamed1st@icloud.com" required>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Background information</legend>
                 <div>
                     <label for="firstName">First name</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Mohamed">
+                    <input type="text" id="firstName" name="firstName" placeholder="Mohamed" required>
                 </div>
                 <div>
                     <label for="surName">Sur name</label>
@@ -38,7 +38,7 @@
                 </div>
                 <div>
                     <label for="birthday">Date of birth</label>
-                    <input type="date" id="birthday" name="birthday">
+                    <input type="date" id="birthday" name="birthday" required min="2007-05-23">
                 </div>
                 <div>
                     <label for="sex" class="label">sex</label>
