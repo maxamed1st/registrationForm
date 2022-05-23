@@ -39,6 +39,7 @@ input:not(input[type="radio"]) {
     width: 225rem;
     height: 25rem;
     box-shadow: 7px 7px black;
+    border: 1rem ridge;
 }
 form > fieldset > div > div{
     margin: auto;
@@ -57,4 +58,15 @@ button:hover {
 }
 button:active {
     background-color: crimson;
+}
+input:not(input[type=radio]):valid {
+    border-color:green;
+}
+input:not(input[type=radio]):invalid {
+    border-color: red;
+}
+#req {
+    display: flex;
+    font-size: 9rem;
+    font-family: 'Courier New', Courier, monospace;
 }
